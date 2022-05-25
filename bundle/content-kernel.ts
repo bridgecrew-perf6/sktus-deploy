@@ -1,0 +1,1 @@
+../../skynet-kernel/extension/bundle/content-kernel.ts

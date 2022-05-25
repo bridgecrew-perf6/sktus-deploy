@@ -1,0 +1,17 @@
+{
+  "name": "skt-us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "browserify ./bundle/content-kernel.ts -p [ tsify --target es2017 ] > public/content-kernel.js && skydeploy ./public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "tsify": "^5.0.4"
+  }
+}
