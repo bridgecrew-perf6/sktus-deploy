@@ -6,12 +6,12 @@ This is an experimental early test for supporting `libkernel` applications if th
 
 To reproduce the deployment, you'll need:
 
-- To be able to build the `skynet-kernel` extension
-- `browserify` installed
-- `skydeploy` installed and included in your PATH.
+- `browserify` installed (`npm install -g browserify`)
+- `skydeploy` installed and included in your PATH. [Download here.](https://github.com/redsolver/skydeploy/releases)
+- To build the [`skynet-kernel` extension](https://github.com/SkynetLabs/skynet-kernel).
 
-The repo has a committed `bundle/content-kernel.ts` file, but you'll want to replace it with symlink to the build file from your local `skynet-kernel` project.
+The repo has a committed `bundle/content-kernel.ts` file, but you'll want to replace it with symlink pointing to the built "bundle" file from your local `skynet-kernel` project.
 
 `ln -s ../../skynet-kernel/extension/bundle/content-kernel.ts`
 
-Next, run `npm run deploy`. To run a local sever instead, run `npm run serve`.
+Next, run `npm run deploy`. To just build locally, run `npm run build`. To serve from a local sever, build, then run `npm run serve`.
